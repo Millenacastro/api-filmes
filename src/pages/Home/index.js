@@ -1,46 +1,10 @@
 import { Container, MovieList, Movie } from "./styles";
-
+import { APIKey } from '../../config/key'
+import { useState } from "react";
 
 function Home() {
 
-    const movies = [
-     {
-        id: 1,
-        title: 'Spider Man',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-     },
-     
-     {
-        id: 2,
-        title: 'Avengers',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-     },
-    
-    {
-        id: 3,
-        title: 'Batman',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-    },
-
-    {
-        id: 1,
-        title: 'Spider Man',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-     },
-     
-     {
-        id: 2,
-        title: 'Avengers',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-     },
-    
-    {
-        id: 3,
-        title: 'Batman',
-        image_url:'https://play-lh.googleusercontent.com/Odv1QnJMznTD_SRuatFVgE6b2Lgt_BGb8TUBMjsNl-gJi3bnxLXgnusGXWHkFGihsJdTde9ucIhNwMPHbkAF'
-    }
-
-    ]
+    const {movies, setMovies} = useState([]) 
 
     return (
         <Container>
