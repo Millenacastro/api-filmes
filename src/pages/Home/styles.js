@@ -31,7 +31,7 @@ img {
    span {
     font-weight: bold;
     font-size: 120%;
-    text-align: center;
+    center-align: center;
    }
 
    a {
