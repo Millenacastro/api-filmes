@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import { APIkey } from '../../config/key.js'
 import { Container, MovieList, Movie } from './styles.js';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Home() {
 
