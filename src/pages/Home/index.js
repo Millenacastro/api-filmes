@@ -9,11 +9,10 @@ function Home() {
     const image_path = 'https://image.tmdb.org/t/p/w500'
 
     useEffect(() => {
-    //consumir a api...
-
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${APIkey}&language=en-US`)
     .then(response => response.json())
     .then(data => {
+    console.log(data.results)
       setMovies(data.results)
     })
 }, [])
