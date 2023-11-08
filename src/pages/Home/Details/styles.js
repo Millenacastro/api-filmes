@@ -21,6 +21,7 @@ img {
   margin-bottom: 2rem;
 }
 
+
 span {
   font-weight: normal;
   font-size: 120%;

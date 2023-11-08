@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { APIkey } from "../../../config/key"
-import { Container } from "../styles.js"
+import { Container } from "./styles.js"
 
 function Details() {
 
@@ -33,13 +33,13 @@ function Details() {
       <img src={movie.image} alt={movie.sinopse}/>
       <div className="details">
       <h1>{movie.title}</h1>
-      <span>sinopse: {movie.sinopse}</span>
+      <span>Sinopse: {movie.sinopse}</span>
       <span className='release-date'>Release date: {movie.releaseDate}</span>
-      <button>Go Back</button>
+      <Link to="/"><button>Go Back</button></Link>
       </div>
-    </div>
+      </div>
         </Container>
     )
 }
 
-export default Details
+export default Details;
